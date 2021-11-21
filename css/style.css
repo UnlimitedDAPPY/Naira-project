@@ -12,13 +12,14 @@
 }
 
 .title {
-    font-weight: 800;
-    font-size: 4.75rem !important;
+    font-weight: 800 !important;
+    font-size: 4.2rem !important;
     color: black !important;
     text-align: center !important;
     background-color: #fff;
     opacity: 0.9;
-    margin: 25px;
+    margin: 2px;
+    /* margin-left:  !important; */
     margin-top: -15px !important;
     padding: 0 3.25rem !important; 
     line-height: 1.2;
@@ -38,14 +39,15 @@
       opacity: 1;
       transform: translate(0); } }
 
-.txt1 {
-    margin-left: -1.5rem;
+ /* .txt1 {
+     margin-left: -1.5rem; 
     
 }
 
-.txt2 {
-    margin-left: -3px !important;
-}
+ .txt2 {
+     margin-left: -3px !important; 
+}  */
+
 .move {
     animation: myMove 1s;
     animation-duration: 1.6s;
@@ -76,14 +78,16 @@
 }
 
 .text {
-    font-size: 2rem;
+    font-size: 1.5rem !important;
     color: black;
     display: inline-block;
     background-color: #fff;
     opacity: 0.9;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1;
-    padding: 2px 3rem !important;
+    margin-left: -45px;
+    letter-spacing: 2px;
+    padding: 1rem 3rem !important;
 }
 
 .dark-overlay2 {
@@ -131,13 +135,6 @@
 .read {
     margin-bottom: 0 !important;
     margin-bottom: 4px !important;
-}
-
-
-#sign-up .boder {
-    border-bottom: 3px #000 solid;
-    width: 100%;
-
 }
 
 #sign-up .lead {
@@ -206,6 +203,7 @@
 .no-border {
     border: 0 !important;
     box-shadow: none !important;
+    border-bottom: solid 3px #000 !important;
 }
 
 .text-underline {
@@ -214,8 +212,8 @@
     margin-top: -17px;
 }
 
-.txt {
-    font-size: 24px;
+.event-txt {
+    font-size: 20px;
 }
 
 .main-body {
@@ -237,21 +235,86 @@
     font-weight: 700;
     margin-left: 8px;
     color: #fff !important;
-     margin-top: -19rem;
-     
-    
+    margin-top: -19rem; 
 } 
- @media screen and (max-width: 682px) {
-    .image-text {
-        font-size: 28px;
-    }   
-} 
+ 
 
-/* @media screen and (max-width: 682px) {
+@media screen and (max-width: 1024px) {
+    .africa-img {
+        width: 25rem !important;
+            
+    
+    }
+    
+}
+
+
+ @media screen and (max-width: 768px) {
     .title {
-        font-size: 1rem;
-        padding: 0 1rem;
-    } */ */
+        font-size: 2.5rem !important;
+        padding: 2px 7rem !important;
+    }
+
+    .text {
+        font-size: 25px !important;
+        padding: 3px 1.5rem !important;
+    }  
+    
+    .txt {
+        margin-left: -15rem;
+    }
+}
+
+@media screen and (max-width: 375px), (max-width: 414px) {
+    .lest {
+        background-image: url(/img/afrca-banner.jpg);
+    }
+    .img00 {
+        display: none  ;
+    }
+    .txt {
+        margin-left: 15px
+    }
+     .text {
+        margin-bottom: 1rem !important;
+        font-size: large !important;
+
+    }
+     .title {
+        padding: 5px !important;
+    } 
+    .image-text {
+        margin-top: 1rem !important;
+    }
+    .pad {
+        margin-top: 5rem !important;
+    }
+    .btn-sign {
+        text-align: center !important;
+        margin-top: 10px;
+    }
+    .gut {
+       background-image: url(/img/afrca-banner.jpg) !important; 
+       background-position: center !important;
+       background-size: cover !important;
+       background-repeat: no-repeat !important; 
+    }
+    .img2 {
+        display: none;
+    }
+    .contact-txt {
+        font-size: 1rem !important;
+        letter-spacing: 2px !important;
+        margin-left: -4rem !important;
+    }
+    .fit {
+        margin-top: 1rem !important;
+    }
+    .contat {
+        margin-top: 9rem !important;
+    }
+}
+
 
 .text-head {
     margin-top: -20px !important;
@@ -287,7 +350,7 @@
 }
 
 .image {
-    width: 60%;
+    width: 60% !important;
     border-radius: 50%;
     background-color: rgba(201, 145, 78, 0.7);
 }
@@ -373,7 +436,6 @@ select option {
 }
 select {
     z-index: 1800;
-    /* position: absolute; */
     background: #fff;
     height: 33%;
     overflow: hidden;
@@ -384,6 +446,47 @@ option:checked, option:hover {
     color: #fff;
     background: red;
 }
-/* Another way*/
+/* contact us*/
+.contact-img {
+    height: 50% !important;
+    width: 100% !important;
+    background-size: cover !important;
+    /* background-color: #000;
+    opacity: 0.2;
+    display: block; */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
 
-  
+.contact-txt {
+    font-size: 5rem !important;
+    letter-spacing: 8px;
+    margin-left: -18rem;
+}
+
+.contact-mssg {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    resize: none !important;
+    outline: none;
+    padding: 10px 0;
+    margin: 20px 0;
+}
+
+.fit {
+    margin-top: -18rem;
+    border: #000 solid 1px;
+}
+
+@media screen and (max-width: 768px) {
+    .fit {
+        margin-top: -12rem;
+    }
+    .contact-us {
+        margin-top: -10rem !important;
+    }
+}
+
+.contact-us {
+    margin-top: -15rem;
+}
